@@ -21,7 +21,7 @@ response3 = requests.get('https://waterservices.usgs.gov/nwis/dv/?format=json&si
 
 
 # --- Configuration ---
-CACHE_FILENAME = 'usgs_data.json'
+CACHE_FILENAME = 'data/usgs_data.json'
 API_URL = 'https://waterservices.usgs.gov/nwis/dv/?format=json&sites=06699005&startDT=1975-01-01&endDT=2000-12-31&siteStatus=all'
 
 
@@ -92,4 +92,5 @@ def extract_data():
 # --- Main script execution ---
 if __name__ == "__main__":
     extract_data()
+
 
