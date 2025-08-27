@@ -1,0 +1,5 @@
+TODO
+    - Use the USGS API to get a list from search parameters, this list will be iterable in the Cache API call funtion
+    - Get the Data into a pandas dataframe that is easily manipulated in the Dash webapp
+    - Be able to search for different parameters
+    - Dash Web App and Graph
