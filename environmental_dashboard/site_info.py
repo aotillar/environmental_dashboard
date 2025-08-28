@@ -1,12 +1,26 @@
 import pandas as pd
 import requests
 import os
-import io  # Needed to treat the string response as a file
+import io
+
+"""
+Currently this script generates a list of possible sites that can be accessed with the USGS API calls. This is really 
+just to automate the gathering of the site info, name to then make an API call for the actual data at those sites. 
+
+There are several filters that can be used with this particular service, such as data type provided, location, 
+active vs inactive, hydrologic unit code, date range etc.
+
+This could be implemented in a dashboard, where the user could input their search parameters, such as state, or
+HUC code, then have a list of sites to choose from. From there the Web app would make a separate API call for the
+actual data.
+"""
+
 
 # --- Configuration ---
 try:
     # Get the parent directory (the project root)
-    PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+    FOLDER_ROOT = os.path.dirname(os.path.abspath(__file__))
+    PROJECT_ROOT = os.path.dirname(FOLDER_ROOT)
     # Join the project root with the desired subdirectory and filename
     CACHE_FILENAME = os.path.join(PROJECT_ROOT, 'data', 'usgs_sitedata.rdb')
 except NameError:

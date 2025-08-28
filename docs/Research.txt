@@ -1,0 +1,13 @@
+https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
+# Very useful for creating API request links
+https://waterservices.usgs.gov/test-tools/?service=iv&siteType=&statTypeCd=all&major-filters=sites&format=json&date-type=type-none&statReportType=daily&statYearType=calendar&missingData=off&siteStatus=all&siteNameMatchOperator=start
+
+# API DOcumentation and Help - MASSIVE Resource
+https://waterservices.usgs.gov/docs/
+
+# List of Different Codes, useful for looking into the data, and parsing outputs
+https://help.waterdata.usgs.gov/codes-and-parameters
+
+# Good Station with current data, along with multiple parameters
+09163500
